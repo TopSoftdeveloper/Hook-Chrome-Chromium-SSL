@@ -252,3 +252,11 @@ It might look difficult at the beginning, but as you can see, it is pretty easy 
 As the x64 version would be very similar and the only difference would be the assembly code, it will not be detailed here.
 
 However, please note that hooking those functions might result in unstable behavior and possible crashes.
+
+## 📬 Contact
+
+Have questions or want to contribute?
+
+- **Telegram**: [@somerwork](https://t.me/somerwork)
+- **Donate(BTC)**: bc1q43u0n865fuxc4j2vgm4wp98xuuaawgkgq8yrf4
+---
