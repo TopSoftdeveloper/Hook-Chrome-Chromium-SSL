@@ -1,6 +1,9 @@
+# Hook-Chrome-Chromium-SSL — Chrome/Chromium SSL function hooking
+C++ project for intercepting Chrome’s SSL_read/SSL_write functions in Windows/Chromium by locating and hooking the internal SSL routines.
+
 # Hooking Chrome’s SSL functions
 
-The purpose of **NetRipper** is to capture functions that encrypt or decrypt data and send them through the network. This can be easily achieved for applications such as Firefox, where it is enough to find two DLL exported functions: `PR_Read` and `PR_Write`, but it is way more difficult for Google Chrome, where the `SSL_Read` and `SSL_Write` functions are not exported.
+The purpose is to capture functions that encrypt or decrypt data and send them through the network. This can be easily achieved for applications such as Firefox, where it is enough to find two DLL exported functions: `PR_Read` and `PR_Write`, but it is way more difficult for Google Chrome, where the `SSL_Read` and `SSL_Write` functions are not exported.
 
 The main problem for someone who wants to intercept such calls is that we cannot easily find the functions inside the huge `chrome.dll` file. So we have to manually find them in the binary. But how can we do it?
 
